@@ -1,0 +1,16 @@
+@import "../../global.css";
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.myphoto {
+  width: 15rem;
+}
+
+.introtext {
+  margin: 2rem;
+}

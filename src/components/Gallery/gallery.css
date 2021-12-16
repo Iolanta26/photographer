@@ -1,0 +1,51 @@
+.section {
+  text-align: center;
+}
+
+.gallery {
+  height: 85vh;
+  width: 80vw;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  grid-template-rows: 2fr 3fr 2fr;
+  grid-gap: 0.5rem;
+}
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.3);
+}
+
+.buttons {
+  text-align: center;
+}
+
+.galleryButton {
+  padding: 1rem;
+  margin: 0.5rem;
+  display: inline-block;
+  border-style: none;
+  background-color: rgb(253, 237, 218);
+  cursor: pointer;
+}
+
+.maintext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

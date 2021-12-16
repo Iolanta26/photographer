@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+
+.app {
+  height: 100vh;
+}
+
+.section {
+  width: 100%;
+  height: calc(100vh - 3vh);
+  scroll-snap-align: start;
+}
