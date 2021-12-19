@@ -5,16 +5,31 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40rem;
 }
 
 .contactMe {
   margin: 1rem;
+  position: relative;
+}
+
+.contactText {
+  position: relative;
 }
 
 .mytext {
   padding: 4rem;
+  position: relative;
 }
 
 .github p {
   font-weight: 500;
+  position: relative;
 }

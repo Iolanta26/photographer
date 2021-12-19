@@ -1,18 +1,25 @@
 .about {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .aboutContainer {
-  background-color: burlywood;
-  text-align: center;
+  width: 40%;
   padding: 3rem;
-  margin: 0rem 15rem 0rem 15rem;
+  margin: 8rem 0rem 0rem 2rem;
 }
 
 .aboutWord {
   margin-bottom: 3rem;
+  color: burlywood;
+  font-size: 1.5rem;
+}
+
+.pngImage {
+  width: 38rem;
+  position: absolute;
+  right: 0%;
+  top: 130%;
 }

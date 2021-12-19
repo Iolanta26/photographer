@@ -6,7 +6,7 @@
 }
 
 .myphoto {
-  width: 15rem;
+  width: 25rem;
 }
 
 .introtext {
@@ -15,4 +15,11 @@
 
 .smallerText {
   padding-top: 2rem;
+}
+
+.camera_picture {
+  width: 15rem;
+  position: absolute;
+  top: 27rem;
+  right: 2rem;
 }

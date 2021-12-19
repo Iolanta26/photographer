@@ -1,12 +1,16 @@
 import React from "react";
 import "./intro.css";
 
-import myphoto from "./myphoto.jpg";
+import myphoto from "./2.png";
+import intropic from "./intro-pic.png";
 
 const Introduction = () => {
   return (
     <div>
       <div className="section" id="intro">
+        <div>
+          <img src={intropic} alt="intro" class="camera_picture" />
+        </div>
         <div className="intro">
           <img src={myphoto} alt="myphoto" className="myphoto" />
           <div className="introtext">

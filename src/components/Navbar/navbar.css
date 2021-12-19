@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(250, 229, 183);
+  background-color: #fae3dd;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -22,4 +22,5 @@ a {
   text-decoration: none;
   text-align: center;
   padding: 2rem;
+  color: black;
 }
