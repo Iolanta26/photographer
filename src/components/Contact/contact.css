@@ -10,3 +10,11 @@
 .contactMe {
   margin: 1rem;
 }
+
+.mytext {
+  padding: 4rem;
+}
+
+.github p {
+  font-weight: 500;
+}

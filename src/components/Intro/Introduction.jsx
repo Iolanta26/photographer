@@ -13,7 +13,7 @@ const Introduction = () => {
             <h1>
               Hello! <br /> Welcome to my page.
             </h1>
-            <h4>
+            <h4 className="smallerText">
               My name is Emilia Smith. <br /> I am a professional photographer
               working in the US.
             </h4>
