@@ -1,0 +1,12 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contactMe {
+  margin: 1rem;
+}

@@ -41,24 +41,28 @@ const Gallery = () => {
   }, [selected]);
 
   return (
-    <div className="section">
-      <div className="maintext">MY WORKS</div>
-      <ul className="buttons">
-        {list.map((item) => (
-          <GalleryList
-            title={item.title}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
+    <div className="gallery" id="gallery">
       <div className="galleryContainer">
-        <div className="gallery">
-          {data.map((d) => (
-            <div className="imageContainer">
-              <img className="image" id={d.title} src={d.img} alt={d.title} />
-            </div>
+        <div className="maintext">
+          <h1>MY WORKS</h1>
+        </div>
+        <ul className="buttons">
+          {list.map((item) => (
+            <GalleryList
+              title={item.title}
+              setSelected={setSelected}
+              id={item.id}
+            />
           ))}
+        </ul>
+        <div className="galleryContainer">
+          <div className="grid">
+            {data.map((d) => (
+              <div className="imageContainer">
+                <img className="image" id={d.title} src={d.img} alt={d.title} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

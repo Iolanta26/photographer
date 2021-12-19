@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+
+body {
+  height: 100vh;
+}
+
+/* .app {
+} */
+
+.sections {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}

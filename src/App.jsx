@@ -1,9 +1,11 @@
 import { React, useState } from "react";
-import "./global.css";
 import Introduction from "./components/Intro/Introduction";
 import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
+import Navbar from "./components/Navbar/Navbar";
+
+import "./app.css";
 
 function App() {
   const [view, setView] = useState(0);
@@ -14,7 +16,8 @@ function App() {
   };
   return (
     <div className="app">
-      <div className="section" onScroll={scrollHandle}>
+      <Navbar />
+      <div className="sections" onScroll={scrollHandle}>
         <Introduction />
         <About />
         <Gallery />

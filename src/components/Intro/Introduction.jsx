@@ -6,7 +6,7 @@ import myphoto from "./myphoto.jpg";
 const Introduction = () => {
   return (
     <div>
-      <div className="section">
+      <div className="section" id="intro">
         <div className="intro">
           <img src={myphoto} alt="myphoto" className="myphoto" />
           <div className="introtext">

@@ -1,14 +1,23 @@
-.section {
+.gallery {
+  height: 100vh;
+}
+
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.gallery {
-  height: 85vh;
+.grid {
+  margin: 0 auto;
+  height: 65vh;
   width: 80vw;
   display: grid;
   align-content: center;
-  grid-template-columns: 1fr 2fr 1.5fr;
-  grid-template-rows: 2fr 3fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr;
   grid-gap: 0.5rem;
 }
 .imageContainer {
@@ -33,6 +42,7 @@
 
 .buttons {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .galleryButton {
@@ -48,4 +58,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4.5rem;
 }
