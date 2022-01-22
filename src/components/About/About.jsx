@@ -3,12 +3,21 @@ import "./about.css";
 
 import pngImage from "./1.png";
 
-const About = () => {
+const About = ({ view }) => {
+  const styleText = {
+    transform: `${view >= 580 ? "translateX(20%)" : "0"}`,
+    opacity: `${view >= 580 ? "1" : "0"}`,
+  };
+  const styleImages = {
+    transform: `${view >= 580 ? "translateX(-25%)" : "0"}`,
+    opacity: `${view >= 580 ? "1" : "0"}`,
+  };
+
   return (
     <div className="about" id="about">
       {/* Comment */}
-      <img src={pngImage} alt="" className="pngImage" />
-      <div className="aboutContainer">
+      <img src={pngImage} alt="" className="pngImage" style={styleImages} />
+      <div className="aboutContainer" style={styleText}>
         <div className="aboutWord">
           <h1>ABOUT</h1>
         </div>

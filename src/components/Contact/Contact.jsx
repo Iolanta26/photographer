@@ -3,11 +3,16 @@ import "./contact.css";
 
 import backgroundImage from "./14.png";
 
-const Contact = () => {
+const Contact = ({ view }) => {
+  const style = {
+    opacity: `${view >= 1750 ? "1" : "0"}`,
+    transform: `${view >= 1750 ? "translateY(-25%)" : "0"}`,
+  };
+
   return (
     <div className="contact" id="contact">
       <img src={backgroundImage} alt="" className="background" />
-      <div>
+      <div style={style} className="contactContainer">
         <h1 className="contactMe">Contact me</h1>
         <p className="contactText">
           For further inquiries, you can reach me via:
@@ -17,7 +22,7 @@ const Contact = () => {
           phone: <span>+123394894809</span>
         </p>
         <div className="mytext">
-          <p>
+          <h5>
             This project is made using React Js by Iolanta Scheifel. <br /> All
             photos are taken from Unsplash. <br /> The photographer is
             fictional. <br />
@@ -30,7 +35,7 @@ const Contact = () => {
             >
               <p>Github</p>
             </a>
-          </p>
+          </h5>
         </div>
       </div>
     </div>

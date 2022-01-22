@@ -5,14 +5,19 @@
   font-weight: 200;
 }
 
-body {
+.app {
   height: 100vh;
 }
-
-/* .app {
-} */
-
 .sections {
-  scroll-behavior: smooth;
+  width: 100%;
+  height: calc(100vh - 4rem);
+  background-color: white;
+  position: relative;
+  top: 4rem;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.sections > * {
+  scroll-snap-align: start;
 }

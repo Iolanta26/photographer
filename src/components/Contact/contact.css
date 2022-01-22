@@ -1,11 +1,18 @@
 .contact {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   text-align: center;
   position: relative;
+  height: calc(100vh - 4rem);
+}
+
+.contactContainer {
+  position: relative;
+  top: 20%;
+  transition: opacity ease-in 0.5s;
+  transition: all 1s ease-in;
 }
 
 .background {

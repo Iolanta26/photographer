@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 4rem);
 }
 
 .myphoto {
@@ -20,6 +20,6 @@
 .camera_picture {
   width: 15rem;
   position: absolute;
-  top: 27rem;
+  top: 20rem;
   right: 2rem;
 }

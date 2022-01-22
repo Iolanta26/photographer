@@ -9,7 +9,7 @@ const Introduction = () => {
     <div>
       <div className="section" id="intro">
         <div>
-          <img src={intropic} alt="intro" class="camera_picture" />
+          <img src={intropic} alt="intro" className="camera_picture" />
         </div>
         <div className="intro">
           <img src={myphoto} alt="myphoto" className="myphoto" />
@@ -18,8 +18,9 @@ const Introduction = () => {
               Hello! <br /> Welcome to my page.
             </h1>
             <h4 className="smallerText">
-              My name is Emilia Smith. <br /> I am a professional photographer
-              working in the US.
+              My name is Emilia Smith. <br /> I am a professional photographer.{" "}
+              <br />
+              Based in the US.
             </h4>
           </div>
         </div>

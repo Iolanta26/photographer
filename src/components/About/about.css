@@ -1,14 +1,15 @@
 .about {
-  height: 100vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  height: calc(100vh - 4rem);
 }
 
 .aboutContainer {
   width: 40%;
-  padding: 3rem;
-  margin: 8rem 0rem 0rem 2rem;
+  padding-top: 4rem;
+  transition: opacity 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .aboutWord {
@@ -20,6 +21,8 @@
 .pngImage {
   width: 38rem;
   position: absolute;
-  right: 0%;
-  top: 130%;
+  right: -10%;
+  top: 110%;
+  transition: opacity 1s ease-in;
+  transition: all 1s ease-in;
 }

@@ -19,9 +19,9 @@ function App() {
       <Navbar />
       <div className="sections" onScroll={scrollHandle}>
         <Introduction />
-        <About />
-        <Gallery />
-        <Contact />
+        <About view={view} />
+        <Gallery view={view} />
+        <Contact view={view} />
       </div>
     </div>
   );

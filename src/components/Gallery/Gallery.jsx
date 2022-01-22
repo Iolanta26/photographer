@@ -3,9 +3,14 @@ import "./gallery.css";
 import { portraitsPhotos, familyPhotos, weddingsPhotos } from "../../data";
 import GalleryList from "./GalleryList";
 
-const Gallery = () => {
+const Gallery = ({ view }) => {
   const [selected, setSelected] = useState("portraits");
   const [data, setData] = useState([]);
+
+  const styleGrid = {
+    transform: `${view >= 1200 ? "translateY(-35%)" : "0"}`,
+    opacity: `${view >= 1200 ? "1" : "0"}`,
+  };
 
   const list = [
     /// names of the buttons in GalleryList
@@ -42,27 +47,32 @@ const Gallery = () => {
 
   return (
     <div className="gallery" id="gallery">
-      <div className="galleryContainer">
-        <div className="maintext">
-          <h1>MY WORKS</h1>
-        </div>
-        <ul className="buttons">
-          {list.map((item) => (
-            <GalleryList
-              title={item.title}
-              setSelected={setSelected}
-              id={item.id}
-            />
+      <div>
+        <h1 className="maintext">MY WORKS</h1>
+      </div>
+      <ul className="buttons">
+        {list.map((item) => (
+          <GalleryList
+            key={item.id}
+            title={item.title}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
+      </ul>
+      <div className="galleryContainer" style={styleGrid}>
+        <div className="grid">
+          {data.map((d) => (
+            <div className="imageContainer">
+              <img
+                className="image"
+                key={d.id}
+                id={d.id}
+                src={d.img}
+                alt={d.title}
+              />
+            </div>
           ))}
-        </ul>
-        <div className="galleryContainer">
-          <div className="grid">
-            {data.map((d) => (
-              <div className="imageContainer">
-                <img className="image" id={d.title} src={d.img} alt={d.title} />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>
