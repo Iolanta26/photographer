@@ -1,8 +1,6 @@
 import React from "react";
 import "./contact.css";
 
-import backgroundImage from "./14.png";
-
 const Contact = ({ view }) => {
   const style = {
     opacity: `${view >= 1750 ? "1" : "0"}`,
@@ -11,7 +9,6 @@ const Contact = ({ view }) => {
 
   return (
     <div className="contact" id="contact">
-      <img src={backgroundImage} alt="" className="background" />
       <div style={style} className="contactContainer">
         <h1 className="contactMe">Contact me</h1>
         <p className="contactText">

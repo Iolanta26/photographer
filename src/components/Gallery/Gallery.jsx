@@ -62,14 +62,14 @@ const Gallery = ({ view }) => {
       </ul>
       <div className="galleryContainer" style={styleGrid}>
         <div className="grid">
-          {data.map((d) => (
+          {data.map((image) => (
             <div className="imageContainer">
               <img
                 className="image"
-                key={d.id}
-                id={d.id}
-                src={d.img}
-                alt={d.title}
+                key={image.id}
+                id={image.id}
+                src={image.img}
+                alt={image.title}
               />
             </div>
           ))}

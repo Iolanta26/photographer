@@ -1,28 +1,31 @@
 .about {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
   height: calc(100vh - 4rem);
 }
 
 .aboutContainer {
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 4rem;
+  width: 100%;
+}
+
+.text-container {
   transition: opacity 1s ease-in;
   transition: all 1s ease-in;
+  width: 35vw;
+  margin-right: 60px;
 }
 
 .aboutWord {
-  margin-bottom: 3rem;
-  color: burlywood;
-  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: black;
+  font-size: 50px;
 }
 
 .pngImage {
-  width: 38rem;
-  position: absolute;
-  right: -10%;
-  top: 110%;
+  width: 50vw;
   transition: opacity 1s ease-in;
   transition: all 1s ease-in;
 }

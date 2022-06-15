@@ -12,7 +12,7 @@ function App() {
 
   const scrollHandle = (e) => {
     setView(e.target.scrollTop);
-    console.log(view);
+    // console.log(view);
   };
   return (
     <div className="app">

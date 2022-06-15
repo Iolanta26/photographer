@@ -7,19 +7,24 @@
 
 .myphoto {
   width: 25rem;
+  z-index: 2;
+  margin-right: 70px;
 }
 
 .introtext {
-  margin: 2rem;
+  z-index: 2;
 }
 
 .smallerText {
-  padding-top: 2rem;
+  margin-top: 30px;
+  z-index: 2;
 }
 
 .camera_picture {
-  width: 15rem;
+  width: 35rem;
   position: absolute;
-  top: 20rem;
-  right: 2rem;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 1;
 }
